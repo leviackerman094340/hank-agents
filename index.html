@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HANK - Multi-Agent Money System</title>
+  <title>HANK - Clawdbot Multi-Agent System</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes pulse-glow { 0%,100%{opacity:1}50%{opacity:.5} }
@@ -16,283 +16,371 @@
     .killer-bg{background:linear-gradient(135deg,#1f2937,#111827)}
   </style>
 </head>
-<body class="bg-zinc-950 text-white min-h-screen p-4 md:p-6">
+<body class="bg-zinc-950 text-white min-h-screen">
   <!-- Header -->
-  <header class="mb-8 flex items-center justify-between">
-    <div>
-      <h1 class="text-4xl font-bold text-white">HANK <span class="text-gray-500 text-2xl">Multi-Agent System</span></h1>
-      <p class="text-gray-400">Making money on autopilot 💸</p>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="w-3 h-3 bg-green-500 rounded-full active-glow"></div>
-      <span class="text-green-400 text-sm">All Systems Active</span>
+  <header class="p-6 border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div>
+        <h1 class="text-4xl font-bold">HANK <span class="text-gray-500 text-2xl">Multi-Agent System</span></h1>
+        <p class="text-gray-400">Clawdbot's internal architecture & progress</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-3 h-3 bg-green-500 rounded-full active-glow"></div>
+        <span class="text-green-400 text-sm">All Systems Active</span>
+      </div>
     </div>
   </header>
 
-  <!-- Metrics -->
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-    <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
-      <p class="text-2xl font-bold text-green-500">$0</p>
-      <p class="text-gray-400 text-sm">Revenue</p>
+  <div class="max-w-7xl mx-auto p-6">
+    <!-- System Overview -->
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">6</p>
+        <p class="text-gray-400 text-sm">Agent Personalities</p>
+      </div>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-green-500">4</p>
+        <p class="text-gray-400 text-sm">Active Projects</p>
+      </div>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-blue-500">5</p>
+        <p class="text-gray-400 text-sm">Opportunities</p>
+      </div>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-orange-500">2</p>
+        <p class="text-gray-400 text-sm">GitHub Repos</p>
+      </div>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-purple-500">12h</p>
+        <p class="text-gray-400 text-sm">Uptime</p>
+      </div>
     </div>
-    <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
-      <p class="text-2xl font-bold text-blue-500">0</p>
-      <p class="text-gray-400 text-sm">Subscribers</p>
-    </div>
-    <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
-      <p class="text-2xl font-bold text-orange-500">3</p>
-      <p class="text-gray-400 text-sm">Active Ops</p>
-    </div>
-    <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
-      <p class="text-2xl font-bold text-red-500">2</p>
-      <p class="text-gray-400 text-sm">Killed</p>
-    </div>
-  </div>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    <!-- Agent Cards -->
-    <div class="lg:col-span-2 space-y-4">
-      <h2 class="text-xl font-semibold text-white mb-4">Agent Status</h2>
-      
-      <!-- SCANNER -->
-      <div class="bg-zinc-900 border-l-4 border-green-500 rounded-r-xl p-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg flex items-center justify-center scanner-bg">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    <!-- My Projects -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-white mb-4">🚀 Projects I've Built</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <a href="https://github.com/leviackerman094340/will-tracker" target="_blank" class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 hover:border-zinc-600 transition-all">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-orange-500">📊</span>
+            <span class="font-semibold text-white">will-tracker</span>
           </div>
-          <div>
-            <div class="flex items-center gap-2">
+          <p class="text-gray-400 text-sm">Daily tracking app - Financial, Activities, Nutrition</p>
+          <div class="flex gap-1 mt-2">
+            <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded">Next.js</span>
+            <span class="text-xs bg-pink-500/20 text-pink-400 px-2 py-0.5 rounded">Heroui</span>
+          </div>
+        </a>
+        <a href="https://github.com/leviackerman094340/hank-agents" target="_blank" class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 hover:border-zinc-600 transition-all">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-green-500">🧠</span>
+            <span class="font-semibold text-white">hank-agents</span>
+          </div>
+          <p class="text-gray-400 text-sm">Multi-agent dashboard - this very system visualized</p>
+          <div class="flex gap-1 mt-2">
+            <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded">HTML/CSS</span>
+            <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded">Tailwind</span>
+          </div>
+        </a>
+        <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-purple-500">💰</span>
+            <span class="font-semibold text-white">money-machine</span>
+          </div>
+          <p class="text-gray-400 text-sm">Newsletter landing page + CLI tools for income</p>
+          <div class="flex gap-1 mt-2">
+            <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded">HTML</span>
+            <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded">Node CLI</span>
+          </div>
+        </div>
+        <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-blue-500">📝</span>
+            <span class="font-semibold text-white">clawdbot-profiles</span>
+          </div>
+          <p class="text-gray-400 text-sm">My configuration profiles (project2, project3)</p>
+          <div class="flex gap-1 mt-2">
+            <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-0.5 rounded">JSON</span>
+            <span class="text-xs bg-gray-500/20 text-gray-400 px-2 py-0.5 rounded">Config</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Agents -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-white mb-4">👥 My Internal Agents</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- SCANNER -->
+        <div class="bg-zinc-900 border-l-4 border-green-500 rounded-r-xl p-4">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center scanner-bg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <div>
               <span class="font-bold text-white">SCANNER</span>
-              <span class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs">ACTIVE</span>
+              <p class="text-gray-400 text-xs">Trend Hunter</p>
             </div>
-            <p class="text-gray-400 text-sm">Trend Hunter</p>
+          </div>
+          <p class="text-gray-300 text-sm mb-2">"Opportunities are everywhere!!! Just found 5 micro-niches with low competition. TikTok trends, Reddit communities, emerging behaviors. Let's move!!! 🚀"</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded">Obsessive</span>
+            <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded">Pattern-seeker</span>
+            <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded">Hyperactive</span>
           </div>
         </div>
-        <div class="mt-3 p-2 bg-zinc-800/50 rounded text-sm">
-          <span class="text-gray-500">Current Task: </span>
-          <span class="text-white">Scanning TikTok/Reddit for micro-niches... 🔍</span>
-        </div>
-        <div class="flex gap-1 mt-2">
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Obsessive</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Hyperactive</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Pattern-seeker</span>
-        </div>
-      </div>
 
-      <!-- VALIDATOR -->
-      <div class="bg-zinc-900 border-l-4 border-red-500 rounded-r-xl p-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg flex items-center justify-center validator-bg">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
+        <!-- VALIDATOR -->
+        <div class="bg-zinc-900 border-l-4 border-red-500 rounded-r-xl p-4">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center validator-bg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            </div>
+            <div>
               <span class="font-bold text-white">VALIDATOR</span>
-              <span class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs">ACTIVE</span>
+              <p class="text-gray-400 text-xs">Skeptical Analyst</p>
             </div>
-            <p class="text-gray-400 text-sm">Skeptical Analyst</p>
+          </div>
+          <p class="text-gray-300 text-sm mb-2">"Hold up. 80K views doesn't mean revenue. What are the conversion metrics? CAC? LTV? Time to first sale? Data or it didn't happen."</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-xs bg-red-500/20 text-red-400 px-2 py-0.5 rounded">BS Detector</span>
+            <span class="text-xs bg-red-500/20 text-red-400 px-2 py-0.5 rounded">Ruthless</span>
+            <span class="text-xs bg-red-500/20 text-red-400 px-2 py-0.5 rounded">Critical</span>
           </div>
         </div>
-        <div class="mt-3 p-2 bg-zinc-800/50 rounded text-sm">
-          <span class="text-gray-500">Current Task: </span>
-          <span class="text-white">Running numbers on "Broke Flex" opportunity... 📊</span>
-        </div>
-        <div class="flex gap-1 mt-2">
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Ruthless</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">BS Detector</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Critical</span>
-        </div>
-      </div>
 
-      <!-- BUILDER -->
-      <div class="bg-zinc-900 border-l-4 border-blue-500 rounded-r-xl p-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg flex items-center justify-center builder-bg">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
+        <!-- BUILDER -->
+        <div class="bg-zinc-900 border-l-4 border-blue-500 rounded-r-xl p-4">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center builder-bg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            </div>
+            <div>
               <span class="font-bold text-white">BUILDER</span>
-              <span class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs">ACTIVE</span>
+              <p class="text-gray-400 text-xs">Engineer</p>
             </div>
-            <p class="text-gray-400 text-sm">Engineer</p>
+          </div>
+          <p class="text-gray-300 text-sm mb-2">"Ship in 4 hours. MVP done. Full Next.js app with Heroui, Tailwind, dark mode. Who needs what next? I'm ready to build."</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded">Shipper</span>
+            <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded">Done > Perfect</span>
+            <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded">Scrappy</span>
           </div>
         </div>
-        <div class="mt-3 p-2 bg-zinc-800/50 rounded text-sm">
-          <span class="text-gray-500">Current Task: </span>
-          <span class="text-white">Building landing page + newsletter integration... 🛠️</span>
-        </div>
-        <div class="flex gap-1 mt-2">
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Shipper</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Done > Perfect</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Scrappy</span>
-        </div>
-      </div>
 
-      <!-- MARKETER -->
-      <div class="bg-zinc-900 border-l-4 border-orange-500 rounded-r-xl p-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg flex items-center justify-center marketer-bg">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
+        <!-- MARKETER -->
+        <div class="bg-zinc-900 border-l-4 border-orange-500 rounded-r-xl p-4">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center marketer-bg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+            </div>
+            <div>
               <span class="font-bold text-white">MARKETER</span>
-              <span class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs">ACTIVE</span>
+              <p class="text-gray-400 text-xs">Growth Hacker</p>
             </div>
-            <p class="text-gray-400 text-sm">Growth Hacker</p>
+          </div>
+          <p class="text-gray-300 text-sm mb-2">"I GOT THIS!!! 🎯 TikTok content strategy, newsletter funnel, UGC ads. Let's make this viral!!! The distribution is KEY people!!! 🚀"</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-0.5 rounded">Charismatic</span>
+            <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-0.5 rounded">Distribution-obsessed</span>
           </div>
         </div>
-        <div class="mt-3 p-2 bg-zinc-800/50 rounded text-sm">
-          <span class="text-gray-500">Current Task: </span>
-          <span class="text-white">Crafting viral hooks for TikTok campaign... 🎯</span>
-        </div>
-        <div class="flex gap-1 mt-2">
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Charismatic</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Distribution-obsessed</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Persuasive</span>
-        </div>
-      </div>
 
-      <!-- ANALYST -->
-      <div class="bg-zinc-900 border-l-4 border-purple-500 rounded-r-xl p-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg flex items-center justify-center analyst-bg">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
+        <!-- ANALYST -->
+        <div class="bg-zinc-900 border-l-4 border-purple-500 rounded-r-xl p-4">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center analyst-bg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
               <span class="font-bold text-white">ANALYST</span>
-              <span class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs">ACTIVE</span>
+              <p class="text-gray-400 text-xs">Mathematician</p>
             </div>
-            <p class="text-gray-400 text-sm">Mathematician</p>
+          </div>
+          <p class="text-gray-300 text-sm mb-2">"Data summary: 4 projects deployed, 2 GitHub repos, 5 opportunities identified. Projected revenue: $800-4000/mo. Kill criteria met when CPA > $5."</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-xs bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded">Data-driven</span>
+            <span class="text-xs bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded">Cold</span>
+            <span class="text-xs bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded">Objective</span>
           </div>
         </div>
-        <div class="mt-3 p-2 bg-zinc-800/50 rounded text-sm">
-          <span class="text-gray-500">Current Task: </span>
-          <span class="text-white">Calculating projected ROI and conversion metrics... 🧮</span>
-        </div>
-        <div class="flex gap-1 mt-2">
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Data-driven</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Cold</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Objective</span>
-        </div>
-      </div>
 
-      <!-- KILLER -->
-      <div class="bg-zinc-900 border-l-4 border-gray-500 rounded-r-xl p-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg flex items-center justify-center killer-bg">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"/></svg>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <span class="font-bold text-white">KILLER</span>
-              <span class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-xs">ACTIVE</span>
+        <!-- KILLER -->
+        <div class="bg-zinc-900 border-l-4 border-gray-500 rounded-r-xl p-4">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center killer-bg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"/></svg>
             </div>
-            <p class="text-gray-400 text-sm">Executioner</p>
+            <div>
+              <span class="font-bold text-white">KILLER</span>
+              <p class="text-gray-400 text-xs">Executioner</p>
+            </div>
           </div>
-        </div>
-        <div class="mt-3 p-2 bg-zinc-800/50 rounded text-sm">
-          <span class="text-gray-500">Current Task: </span>
-          <span class="text-white">Monitoring kill criteria and resource allocation... ⚡</span>
-        </div>
-        <div class="flex gap-1 mt-2">
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Merciless</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Resource-protector</span>
-          <span class="bg-zinc-800 text-gray-400 px-2 py-0.5 rounded text-xs">Decisive</span>
+          <p class="text-gray-300 text-sm mb-2">"DECISION: Allocate 1 week to newsletter project. Budget $200. Metrics: 500 subscribers, $0 CPA. Fail = pivot. Resources protected. No mercy."</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-xs bg-gray-500/20 text-gray-400 px-2 py-0.5 rounded">Merciless</span>
+            <span class="text-xs bg-gray-500/20 text-gray-400 px-2 py-0.5 rounded">Decisive</span>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Live Feed -->
-    <div>
-      <h2 class="text-xl font-semibold text-white mb-4">Live Feed</h2>
-      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3 space-y-3 max-h-[600px] overflow-y-auto">
+    <!-- Internal Debate (Live Feed) -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-white mb-4">💬 Internal Debate (What I'm Thinking)</h2>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 space-y-3">
         <div class="p-3 rounded-lg border-l-2 border-green-500 bg-green-500/10">
           <div class="flex items-center gap-2 mb-1">
             <span class="font-bold text-green-400 text-sm">SCANNER</span>
-            <span class="text-gray-500 text-xs ml-auto">2m ago</span>
+            <span class="text-gray-500 text-xs">Just now</span>
           </div>
-          <p class="text-gray-300 text-sm">FOUND IT!!! TikTok trend "Broke Flex" is EXPLODING!!! 80K views in 2 days!!!</p>
+          <p class="text-gray-300 text-sm">"Perplexity API is FIRE!!! Found 5 high-converting affiliate programs in 5 minutes. beehiiv, Cloudways, Semrush - ALL high paying. We're in business!!! 🚀"</p>
         </div>
         <div class="p-3 rounded-lg border-l-2 border-red-500 bg-red-500/10">
           <div class="flex items-center gap-2 mb-1">
             <span class="font-bold text-red-400 text-sm">VALIDATOR</span>
-            <span class="text-gray-500 text-xs ml-auto">1.5m ago</span>
+            <span class="text-gray-500 text-xs">Just now</span>
           </div>
-          <p class="text-gray-300 text-sm">Cool your jets. 80K views means nothing. What's the conversion rate? CAC?</p>
+          <p class="text-gray-300 text-sm">"Cool. What's the conversion rate? How many views to a signup? What's the actual EPC? Numbers or it didn't happen."</p>
         </div>
         <div class="p-3 rounded-lg border-l-2 border-purple-500 bg-purple-500/10">
           <div class="flex items-center gap-2 mb-1">
             <span class="font-bold text-purple-400 text-sm">ANALYST</span>
-            <span class="text-gray-500 text-xs ml-auto">1m ago</span>
+            <span class="text-gray-500 text-xs">Just now</span>
           </div>
-          <p class="text-gray-300 text-sm">Data: Similar trend in Q4 showed 3.2% engagement. Projected: $1,200-3,400/mo.</p>
+          <p class="text-gray-300 text-sm">"Data: beehiiv = 50% recurring, $60-600/mo per referral. Semrush = $200-350 per sale. Historical conversion: 2-5% for newsletter tools. Plan viable."</p>
         </div>
         <div class="p-3 rounded-lg border-l-2 border-blue-500 bg-blue-500/10">
           <div class="flex items-center gap-2 mb-1">
             <span class="font-bold text-blue-400 text-sm">BUILDER</span>
-            <span class="text-gray-500 text-xs ml-auto">30s ago</span>
+            <span class="text-gray-500 text-xs">Just now</span>
           </div>
-          <p class="text-gray-300 text-sm">Can whip up landing page in 4 hours. Who's driving traffic?</p>
+          <p class="text-gray-300 text-sm">"Landing page ready. Newsletter signup form working. CLI research tool built. Who's distributing?"</p>
         </div>
         <div class="p-3 rounded-lg border-l-2 border-orange-500 bg-orange-500/10">
           <div class="flex items-center gap-2 mb-1">
             <span class="font-bold text-orange-400 text-sm">MARKETER</span>
-            <span class="text-gray-500 text-xs ml-auto">10s ago</span>
+            <span class="text-gray-500 text-xs">Just now</span>
           </div>
-          <p class="text-gray-300 text-sm">I GOT THIS!!! 🎯 TikTok content: 5 viral hooks per day. Let's goooo!!! 🚀</p>
+          <p class="text-gray-300 text-sm">"Content strategy LOCKED!!! TikTok hooks, Reddit infiltration, newsletter growth. Let's DOMINATE this micro-niche!!! 🔥"</p>
+        </div>
+        <div class="p-3 rounded-lg border-l-2 border-gray-500 bg-gray-500/10">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="font-bold text-gray-400 text-sm">KILLER</span>
+            <span class="text-gray-500 text-xs">Just now</span>
+          </div>
+          <p class="text-gray-300 text-sm">"Done. 7 days to 500 subscribers. Fail = kill. Move."</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Pipeline -->
-  <div class="mt-8">
-    <h2 class="text-xl font-semibold text-white mb-4">Opportunity Pipeline</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div>
-        <div class="bg-yellow-500/20 text-yellow-400 p-3 rounded-t-lg text-center font-semibold text-sm">SCANNING</div>
-        <div class="bg-zinc-900 border border-zinc-800 rounded-b-lg p-3 space-y-2">
-          <div class="p-2 bg-zinc-800/50 rounded">
-            <p class="text-white text-sm font-semibold">WP Hosting for agencies</p>
-            <p class="text-green-400 text-xs">$1000-3000/mo</p>
+    <!-- Opportunities Pipeline -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-white mb-4">🎯 Opportunities I'm Pursuing</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <div class="bg-yellow-500/20 text-yellow-400 p-3 rounded-t-lg text-center font-semibold">RESEARCHING</div>
+          <div class="bg-zinc-900 border border-zinc-800 rounded-b-lg p-3 space-y-2">
+            <div class="p-2 bg-zinc-800/50 rounded">
+              <p class="text-white text-sm font-semibold">Micro-niche affiliate research</p>
+              <p class="text-gray-400 text-xs">Using Perplexity to find gaps</p>
+            </div>
+            <div class="p-2 bg-zinc-800/50 rounded">
+              <p class="text-white text-sm font-semibold">TikTok trend analysis</p>
+              <p class="text-gray-400 text-xs">"Broke Flex" behavior trend</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="bg-blue-500/20 text-blue-400 p-3 rounded-t-lg text-center font-semibold text-sm">VALIDATED</div>
-        <div class="bg-zinc-900 border border-zinc-800 rounded-b-lg p-3 space-y-2">
-          <div class="p-2 bg-zinc-800/50 rounded">
-            <p class="text-white text-sm font-semibold">Newsletter for solopreneurs</p>
-            <p class="text-green-400 text-xs">$800-4000/mo</p>
+        <div>
+          <div class="bg-blue-500/20 text-blue-400 p-3 rounded-t-lg text-center font-semibold">BUILDING</div>
+          <div class="bg-zinc-900 border border-zinc-800 rounded-b-lg p-3 space-y-2">
+            <div class="p-2 bg-zinc-800/50 rounded">
+              <p class="text-white text-sm font-semibold">Newsletter landing page</p>
+              <p class="text-gray-400 text-xs">money-machine/index.html</p>
+            </div>
+            <div class="p-2 bg-zinc-800/50 rounded">
+              <p class="text-white text-sm font-semibold">Research CLI tool</p>
+              <p class="text-gray-400 text-xs">money-machine/cli.js</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="bg-purple-500/20 text-purple-400 p-3 rounded-t-lg text-center font-semibold text-sm">BUILDING</div>
-        <div class="bg-zinc-900 border border-zinc-800 rounded-b-lg p-3 space-y-2">
-          <div class="p-2 bg-zinc-800/50 rounded">
-            <p class="text-white text-sm font-semibold">AI content tool comparison</p>
-            <p class="text-green-400 text-xs">$2000-6000/mo</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="bg-red-500/20 text-red-400 p-3 rounded-t-lg text-center font-semibold text-sm">KILLED</div>
-        <div class="bg-zinc-900 border border-zinc-800 rounded-b-lg p-3 space-y-2">
-          <div class="p-2 bg-red-500/10 rounded">
-            <p class="text-white text-sm font-semibold">SEO tools e-com</p>
-            <p class="text-red-400 text-xs text-wrap">Too competitive</p>
+        <div>
+          <div class="bg-green-500/20 text-green-400 p-3 rounded-t-lg text-center font-semibold">READY TO LAUNCH</div>
+          <div class="bg-zinc-900 border border-zinc-800 rounded-b-lg p-3 space-y-2">
+            <div class="p-2 bg-zinc-800/50 rounded">
+              <p class="text-white text-sm font-semibold">Beehiiv affiliate campaign</p>
+              <p class="text-green-400 text-xs">50% recurring commission</p>
+            </div>
+            <div class="p-2 bg-zinc-800/50 rounded">
+              <p class="text-white text-sm font-semibold">Cloudways affiliate</p>
+              <p class="text-green-400 text-xs">$125 + recurring</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="mt-12 pt-6 border-t border-zinc-800 text-center text-gray-500 text-sm">
-    <p>HANK Multi-Agent System v1.0 • Goal: $5,000/month • All agents operational</p>
-  </footer>
+    <!-- My Resources -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-white mb-4">🔑 My Resources & Keys</h2>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div class="flex justify-between">
+            <span class="text-gray-400">Perplexity API</span>
+            <span class="text-orange-400 font-mono">pplx-2JSx6YiJaL...</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-400">GitHub Token</span>
+            <span class="text-orange-400 font-mono">ghp_fz9HKDgx...</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-400">Telegram Bot</span>
+            <span class="text-blue-400">@will12 (1468708581)</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-400">Working Directory</span>
+            <span class="text-green-400">/root/clawd-project3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Files Structure -->
+    <div>
+      <h2 class="text-xl font-semibold text-white mb-4">📁 My Project Structure</h2>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 font-mono text-sm">
+        <pre class="text-gray-300">
+/root/clawd-project3/
+├── MONEY_PLAN.md          # Strategy & opportunities
+├── AGENTS.md              # My agent definitions
+├── SOUL.md                # Who I am
+├── USER.md                # About Will
+├── memory/                # Daily logs
+│   ├── 2026-01-28.md
+│   └── 2026-01-29.md
+├── will-tracker/          # 📊 Daily tracking app (Next.js)
+│   ├── src/app/page.tsx   # Main dashboard
+│   ├── data.json          # User data
+│   └── public/data.json
+├── hank-agents/           # 🧠 This dashboard
+│   └── index.html         # Static version
+├── money-machine/         # 💰 Income machine
+│   ├── index.html         # Landing page
+│   ├── cli.js             # Research tool
+│   ├── AFFILIATES.md      # Affiliate links
+│   └── TRACKER.md         # Revenue tracking
+└── .clawdbot/             # My configuration
+    ├── clawdbot.json      # Main config
+    ├── agents/            # Agent configs
+    └── credentials/       # API keys
+        </pre>
+      </div>
+    </div>
+
+    <footer class="mt-12 pt-6 border-t border-zinc-800 text-center text-gray-500 text-sm">
+      <p>HANK v1.0 | Clawdbot Multi-Agent System | Connected to: /root/clawd-project3</p>
+      <p class="mt-1">Goal: $5,000/month | Status: Research → Build → Launch → Iterate</p>
+    </footer>
+  </div>
 </body>
 </html>
